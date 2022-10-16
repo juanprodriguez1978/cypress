@@ -8,4 +8,11 @@ describe("Pruebas checkbox", ()=>{
         cy.wait(3000)
         cy.get('#layered_id_attribute_group_3').uncheck()
     })
+    it("Order by Highest Price", ()=>{
+        cy.get('#selectProductSort').select('Price: Highest first')
+    })
+    
+    it("Order by In Stock", ()=>{
+        cy.get('#selectProductSort').select('In stock')
+    })
 })
