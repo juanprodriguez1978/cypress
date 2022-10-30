@@ -7,10 +7,10 @@ describe('Cuentas',  ()=>{
         expect(a==b).to.equal(true);    
     })
     it('Vamos a ver que reste bien', ()=>{
-        expect(a-b).to.equal(0);    
+        expect(a-5,"La resta debe dar 0, pero da otro valor").to.equal(0);    
     })
     it('Vamos a ver una igualdad', ()=>{
-        expect(1==1).to.equal(true);    
+        expect(1==2,"Ambos terminos tiene que ser iguales y no lo son").to.equal(true); //Se coloca una aclaracion para que pueda leerse mejor el error
     })
     it('Vamos a ver que no sea una igualdad', ()=>{
         expect(1==2).to.equal(false);    
