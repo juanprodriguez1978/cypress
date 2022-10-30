@@ -19,6 +19,7 @@ describe('Search test cases',()=>{
         //cy.get('#search_query_top').type('dress')
         //cy.get('#searchbox > .btn').click()
         //cy.get('.lighter').contains('"dress"')
+        cy.logSpecFormat('Searching for dresses')
         articlesPage.verifyArticle('dress')
     })
     it('Search hats', ()=>{
