@@ -3,7 +3,7 @@ describe('Search test cases',function(){
         cy.log("Ejecutando precondiciones a las pruebas")
     })
     after(function(){
-        cy.log("Ejecutando postcondiciones a las pruebas")
+        cy.log("Ejecutando todas postcondiciones a las pruebas")
     })
     it('Search dresses', function(){
         cy.visit('http://automationpractice.com/index.php')
